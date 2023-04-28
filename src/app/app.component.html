@@ -1,0 +1,42 @@
+<div class="window">
+  <header class="toolbar toolbar-header draggable">
+
+    <div class="toolbar-actions">
+      <div class="btn-group">
+        <button class="btn btn-default" (click)="resetBoard()">
+          <span class="icon icon-arrows-ccw"></span>
+        </button>
+        <button class="btn btn-default">
+          <span class="icon icon-doc-text"></span>
+        </button>
+        <button class="btn btn-default" (click)="flipBoard()">
+          <span class="icon icon-retweet"></span>
+        </button>
+      </div>
+
+      <button class="btn btn-default pull-right" (click)="joinBoard()" *ngIf="!(hasJoined | async)">
+        <span class="icon icon-user-add icon-text"></span>
+        Join
+      </button>
+      <button class="btn btn-default pull-right" (click)="leaveBoard()" *ngIf="hasJoined | async">
+        <span class="icon icon-logout icon-text"></span>
+        Leave
+      </button>
+    </div>
+  </header>
+
+  <chessboard style="visible:hidden"></chessboard>
+
+  <footer class="toolbar toolbar-footer">
+    <div class="toolbar-actions">
+      <div class="row-container">
+        <div class="row">
+          <div class="col col-left overflow-ellipsis"><players></players></div>
+          <div class="col"><spectators></spectators></div>
+          <div class="col col-right"><chrono></chrono></div>
+        </div>
+      </div>
+      <moves></moves>
+    </div>
+  </footer>
+</div>

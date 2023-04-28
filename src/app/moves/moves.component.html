@@ -1,0 +1,3 @@
+<div class="last-moves">
+  <div *ngFor="let move of moves; let isLast=last" [innerHTML]="move.html + (isLast ? '' : ' - ')" [tooltip]="move.title"></div> &nbsp;
+</div>

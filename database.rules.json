@@ -1,0 +1,12 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": "auth != null",
+    "chessboard": {
+      "state" : {
+        ".read": "true",
+        ".write": "data.parent().child('players').child('black').val() === auth.uid || data.parent().child('players').child('white').val() === auth.uid",
+      }
+    }
+  }
+}

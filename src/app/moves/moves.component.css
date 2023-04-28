@@ -1,0 +1,40 @@
+.captured {
+  color:red;
+}
+
+.last-moves {
+  width: 100%;
+  text-align: center;
+}
+
+.last-moves > div {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+tooltip .tooltip-contents {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0.8;
+    white-space: normal;
+}
+
+tooltip .tooltip-contents::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}

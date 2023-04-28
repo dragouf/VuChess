@@ -1,0 +1,41 @@
+{
+  "chessboard" : {
+    "players" : {
+      "black" : "",
+      "current" : "w",
+      "white" : ""
+    },
+    "spectators" : {
+      "hIyVbvdYgZRtwCiNwZT68GlqW2c2" : {
+        "last_changed" : 1517758483724,
+        "state" : "offline"
+      },
+      "uEr3Ii49PLT9dHFKfPkZCqaELIX2" : {
+        "last_changed" : 1517758694070,
+        "state" : "offline"
+      }
+    },
+    "state" : "rnbqkbnr/pppp2pp/8/5p2/4PP2/4B3/Pp4PP/RN1QKBNR w KQkq - 0 7"
+  },
+  "history" : {
+    "games" : {
+      "endDate" : "dsd",
+      "players" : {
+        "black" : "hIyVbvdYgZRtwCiNwZT68GlqW2c2",
+        "white" : "uEr3Ii49PLT9dHFKfPkZCqaELIX2"
+      },
+      "startDate" : "ssdsd",
+      "turns" : [ "f4", "k8" ]
+    }
+  },
+  "users" : {
+    "hIyVbvdYgZRtwCiNwZT68GlqW2c2" : {
+      "email" : "dlaurent@vulog.com",
+      "name" : "David Laurent"
+    },
+    "uEr3Ii49PLT9dHFKfPkZCqaELIX2" : {
+      "email" : "dragouf@gmail.com",
+      "name" : "David LAURENT"
+    }
+  }
+}
